@@ -1,13 +1,13 @@
 {
   "name": "badem",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "badem is an abstract component composer that does not require a DOM.",
   "main": "dist/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "bin/test.sh;npm run lint",
+    "test": "bin/test.sh",
     "lint": "bin/lint.sh",
     "build:node": "bin/build-node.sh"
   },
@@ -35,9 +35,11 @@
     "babel-loader": "6.2.9",
     "babel-preset-es2015": "6.18.0",
     "babel-preset-stage-0": "6.16.0",
+    "chai": "^3.5.0",
     "eslint": "3.11.1",
     "eslint-plugin-babel": "4.0.0",
     "jsbites-coding-standards": "^0.1.0",
+    "mocha": "^3.2.0",
     "webpack": "1.14.0",
     "webpack-node-externals": "1.5.4",
     "webpack-validator": "2.2.11"
