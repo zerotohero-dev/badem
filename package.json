@@ -1,6 +1,6 @@
 {
   "name": "badem",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "badem is an abstract component composer that does not require a DOM.",
   "main": "dist/index.js",
   "directories": {
