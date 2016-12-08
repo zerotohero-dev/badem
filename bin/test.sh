@@ -7,6 +7,14 @@
 #   \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
 #
 
+npm run build:node
+
+if [ $? != 0 ]; then
+    echo "Build failed. — Exiting."
+
+    exit 1
+fi
+
 mocha
 
 if [ $? != 0 ]; then
