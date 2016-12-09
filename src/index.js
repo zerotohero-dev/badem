@@ -5,7 +5,8 @@
  *   \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
  */
 
-const warn = console.warn;
+// TODO: give a configuration option to use console.log or console.warn; default to log.
+const warn = console.log;
 
 const createNew = ( componentStore, props, type ) => {
     if ( !componentStore ) { return null; }

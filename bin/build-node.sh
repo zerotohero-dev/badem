@@ -7,4 +7,5 @@
 #   \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
 #
 
+rm -rf dist/nodejs
 webpack --config webpack.node.config.js
