@@ -7,5 +7,4 @@
 #   \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
 #
 
-npm run build:jsnext
-npm run build:node
+cp -r src dist/js

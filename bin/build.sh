@@ -7,5 +7,5 @@
 #   \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
 #
 
-npm run build:jsnext
 npm run build:node
+npm run build:js
