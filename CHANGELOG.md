@@ -6,6 +6,10 @@
    \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
 ```
 
+## badem v0.4.0
+
+* Add `props` support to the component creators.
+
 ## badem v0.3.0
 
 * Initial working version.

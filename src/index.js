@@ -7,7 +7,7 @@
 
 const warn = console.warn;
 
-const createNew = ( componentStore, type ) => {
+const createNew = ( componentStore, props, type ) => {
     if ( !componentStore ) { return null; }
     if ( !type ) { return null; }
 
@@ -15,7 +15,7 @@ const createNew = ( componentStore, type ) => {
 
     if ( !creator ) { return null; }
 
-    const instance = creator();
+    const instance = creator( props );
 
     return instance;
 };
@@ -46,7 +46,7 @@ const createAndMount = ( componentStore, parentInstance, descriptor ) => {
     const type = descriptor.type;
     const childDescriptors = descriptor.children;
 
-    const futureInstance = createNew( componentStore, type );
+    const futureInstance = createNew( componentStore, descriptor, type );
 
     if ( !futureInstance ) {
         warn( `
