@@ -39,6 +39,7 @@ const mountInstanceChildren = ( componentStore, parentInstance, instance, childD
 const createAndMount = ( componentStore, parentInstance, descriptor ) => {
     if ( !descriptor ) {
         warn( 'No descriptor found. Bailing out.' );
+
         return;
     }
 
@@ -61,9 +62,9 @@ const createAndMount = ( componentStore, parentInstance, descriptor ) => {
     const isPromise = !!futureInstance.then;
 
     if ( isPromise ) {
-        futureInstance.then( ( instance ) => {
-            mountInstanceChildren( componentStore, parentInstance, instance, childDescriptors );
-        } );
+        futureInstance.then( ( instance ) =>
+            mountInstanceChildren( componentStore, parentInstance, instance, childDescriptors )
+        );
 
         return;
     }
@@ -90,8 +91,7 @@ const createAndMount = ( componentStore, parentInstance, descriptor ) => {
  * * Each node on the JSON should have a `name` attribute.
  * * A node may or may not have `children` (which is an array of nodes).
  */
-const mount = ( componentStore, descriptor ) => {
-    createAndMount( componentStore, null, descriptor );
-};
+const mount = ( componentStore, descriptor ) => createAndMount( componentStore, null, descriptor );
+
 
 export { mount };

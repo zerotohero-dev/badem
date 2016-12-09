@@ -1,6 +1,6 @@
 {
   "name": "badem",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "badem is an abstract component composer that does not require a DOM.",
   "main": "dist/index.js",
   "directories": {
@@ -9,7 +9,9 @@
   "scripts": {
     "test": "bin/test.sh",
     "lint": "bin/lint.sh",
-    "build:node": "bin/build-node.sh"
+    "build:node": "bin/build-node.sh",
+    "build:js": "bin/build-js.sh",
+    "build": "bin/build.sh"
   },
   "repository": {
     "type": "git",
