@@ -6,6 +6,10 @@
    \/_____/  \/_/\/_/  \/____/  \/_____/  \/_/  \/_/
 ```
 
+## badem v0.5.0
+
+* Promisified `badem` API, so that you can do post-mount actions by doing things like `mount( store, app ).then( doActions )`.
+
 ## badem v0.4.3
 
 * Add `props` support to the component creators.

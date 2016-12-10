@@ -21,57 +21,74 @@ const createNew = ( componentStore, props, type ) => {
     return instance;
 };
 
-const mountInstanceChildren = ( componentStore, parentInstance, instance, childDescriptors ) => {
-    if ( parentInstance && parentInstance.add ) {
-        parentInstance.add( instance );
-    }
+const mountInstanceChildren = ( componentStore, parentInstance, instance, childDescriptors ) =>
+    new Promise( ( resolve, reject ) => {
+        if ( parentInstance && parentInstance.add ) {
+            parentInstance.add( instance );
+        }
 
-    if ( !childDescriptors ) { return; }
+        if ( !childDescriptors ) {
+            resolve( { done: true } );
 
-    childDescriptors.forEach( ( childDescriptor ) => {
+            return;
+        }
 
-        /* eslint-disable no-use-before-define */
-        createAndMount( componentStore, instance, childDescriptor );
-        /* eslint-enable no-use-before-define */
+        const promises = [];
 
+        childDescriptors.forEach( ( childDescriptor ) => {
+            promises.push(
+                /* eslint-disable no-use-before-define */
+                createAndMount( componentStore, instance, childDescriptor )
+                /* eslint-enable no-use-before-define */
+            );
+        } );
+
+        resolve( Promise.all( promises ) );
     } );
-};
 
-const createAndMount = ( componentStore, parentInstance, descriptor ) => {
-    if ( !descriptor ) {
-        warn( 'No descriptor found. Bailing out.' );
+const createAndMount = ( componentStore, parentInstance, descriptor ) =>
+    new Promise( ( resolve, reject ) => {
+        if ( !descriptor ) {
+            reject( { done: false, message: 'No descriptor found. Bailing out.' } );
 
-        return;
-    }
+            return;
+        }
 
-    const type = descriptor.type;
-    const childDescriptors = descriptor.children;
+        const type = descriptor.type;
+        const childDescriptors = descriptor.children;
 
-    const futureInstance = createNew( componentStore, descriptor, type );
+        const futureInstance = createNew( componentStore, descriptor, type );
 
-    if ( !futureInstance ) {
-        warn( `
-            No future instance found for type “${type}”; bailing out.
-            Make sure your component store has a “${type}” attribute
-            that is a “Promise” or “function”; and also make sure that you
-            export your component store.
-        ` );
+        if ( !futureInstance ) {
+            reject( {
+                done: false,
+                message: `
+                    No future instance found for type “${type}”; bailing out.
+                    Make sure your component store has a “${type}” attribute
+                    that is a “Promise” or “function”; and also make sure that you
+                    export your component store.
+                `
+            } );
 
-        return;
-    }
+            return;
+        }
 
-    const isPromise = !!futureInstance.then;
+        const isPromise = !!futureInstance.then;
 
-    if ( isPromise ) {
-        futureInstance.then( ( instance ) =>
-            mountInstanceChildren( componentStore, parentInstance, instance, childDescriptors )
+        if ( isPromise ) {
+            resolve(
+                futureInstance.then( ( instance ) =>
+                    mountInstanceChildren( componentStore, parentInstance, instance, childDescriptors )
+                )
+            );
+
+            return;
+        }
+
+        resolve(
+            mountInstanceChildren( componentStore, parentInstance, futureInstance, childDescriptors )
         );
-
-        return;
-    }
-
-    mountInstanceChildren( componentStore, parentInstance, futureInstance, childDescriptors );
-};
+    } );
 
 /**
  * Runs a mount plan on the `componentStore` based on the `descriptor`.
