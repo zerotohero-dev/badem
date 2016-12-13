@@ -16,7 +16,29 @@
 >
 > Once `badem` hits `version 1.0`, its API will stabilize, and the changes introduces will be more backwards-compatible, as I will follow the [Semantic Versioning 2.0.0](http://semver.org/spec/v2.0.0.html) standards.
 
-## About
+## About This Repository
+
+This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
+
+```
+  _               __
+ |_)   _|_  _ __ (_  o _   _   _|
+ |_) \/ |_ (/_   __) | /_ (/__(_|
+     /        |  _.     _. (_   _ ._ o ._ _|_
+            \_| (_| \/ (_| __) (_ |  | |_) |_
+                                       |
+            »»  bit.ly/bytesized  ««
+```
+
+## Byte-Sized What?!
+
+[Byte-Sized JavaScript][vidcast].
+
+It is a compilation of short (*around ten minutes*) monthly screencasts about **JavaScript** and related technologies.
+
+[vidcast]: https://bytesized.tv/ "ByteSized.TV"
+
+## About `badem`
 
 `badem` started as a thought experiment:
 
