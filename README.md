@@ -160,6 +160,10 @@ If you want to report a bug; or share a comment or suggestion, [file an issue](h
 * **Project Maintainer**: [Volkan Özçelik](https://volkan.io/)
 * **Project Website**: <https://bytesized.tv>
 
+## License
+
+MIT-licensed. — See [the license file](LICENSE.md) for details.
+
 ## Code of Conduct
 
 We are committed to making participation in this project a harassment-free experience for everyone, regardless of the level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.
