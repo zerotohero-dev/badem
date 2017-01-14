@@ -18,7 +18,7 @@
 
 ## About This Repository
 
-This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
+This repository is a part of the [Byte-Sized JavaScript VideoCasts][vidcast].
 
 ```
   _               __
@@ -27,7 +27,7 @@ This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
      /        |  _.     _. (_   _ ._ o ._ _|_
             \_| (_| \/ (_| __) (_ |  | |_) |_
                                        |
-            »»  bit.ly/bytesized  ««
+            »»  bytesized.tv  ««
 ```
 
 ## Byte-Sized What?!
