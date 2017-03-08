@@ -112,7 +112,7 @@ See the `./examples` folders for additional details and usage examples.
 
 For development, you’ll need a recent version of [Node.JS](https://nodejs.org) and [NPM](https://npmjs.org).
 
-**[Node.JS](https://nodejs.org) version 7.2.0 or above** is recommended.
+[The current stable Node.JS version](https://nodejs.org/en/) is recommended.
 
 `badem` is self-sufficient. — For production use, you just need a good-enough JavaScript runtime.
 
