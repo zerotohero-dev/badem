@@ -1,3 +1,17 @@
+## Unmaintained Software
+
+I’m not planning to contribute to this project for a while.
+
+If you are interested in being a contributor, [please let me know](mailto:volkan.io).
+
+Thanks,
+
+Volkan.
+
+----
+
+
+
 ```
   ______    ______    _____    ______    __    __
  /\  == \  /\  __ \  /\  __-. /\  ___\  /\ "-./  \
