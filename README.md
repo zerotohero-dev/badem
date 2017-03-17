@@ -1,3 +1,17 @@
+## Unmaintained Software
+
+I’m not planning to contribute to this project for a while.
+
+If you are interested in being a contributor, [please let me know](mailto:volkan.io).
+
+Thanks,
+
+Volkan.
+
+----
+
+
+
 ```
   ______    ______    _____    ______    __    __
  /\  == \  /\  __ \  /\  __-. /\  ___\  /\ "-./  \
@@ -18,7 +32,7 @@
 
 ## About This Repository
 
-This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
+This repository is a part of the [Byte-Sized JavaScript VideoCasts][vidcast].
 
 ```
   _               __
@@ -27,7 +41,7 @@ This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
      /        |  _.     _. (_   _ ._ o ._ _|_
             \_| (_| \/ (_| __) (_ |  | |_) |_
                                        |
-            »»  bit.ly/bytesized  ««
+            »»  bytesized.tv  ««
 ```
 
 ## Byte-Sized What?!
@@ -112,7 +126,7 @@ See the `./examples` folders for additional details and usage examples.
 
 For development, you’ll need a recent version of [Node.JS](https://nodejs.org) and [NPM](https://npmjs.org).
 
-**[Node.JS](https://nodejs.org) version 7.2.0 or above** is recommended.
+[The current stable Node.JS version](https://nodejs.org/en/) is recommended.
 
 `badem` is self-sufficient. — For production use, you just need a good-enough JavaScript runtime.
 
@@ -158,7 +172,11 @@ If you want to report a bug; or share a comment or suggestion, [file an issue](h
 ## Contact Information
 
 * **Project Maintainer**: [Volkan Özçelik](https://volkan.io/)
-* **Project Website**: <https://bytesized.tv>
+* **Project Website**: [bytesized.tv](https://bytesized.tv/)
+
+## License
+
+MIT-licensed. — [See the license file for details](LICENSE.md).
 
 ## Code of Conduct
 
