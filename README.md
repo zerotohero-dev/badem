@@ -11,7 +11,6 @@ Volkan.
 ----
 
 
-
 ```
   ______    ______    _____    ______    __    __
  /\  == \  /\  __ \  /\  __-. /\  ___\  /\ "-./  \
@@ -126,9 +125,7 @@ See the `./examples` folders for additional details and usage examples.
 
 For development, you’ll need a recent version of [Node.JS](https://nodejs.org) and [NPM](https://npmjs.org).
 
-[The current stable Node.JS version](https://nodejs.org/en/) is recommended.
-
-`badem` is self-sufficient. — For production use, you just need a good-enough JavaScript runtime.
+You will need the **current** version of [Node.JS](https://nodejs.org/) with all the bells and whistles — [You can install it from nodejs.org](https://nodejs.org/).
 
 ## Package Scripts
 
