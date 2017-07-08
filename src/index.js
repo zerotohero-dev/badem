@@ -118,5 +118,4 @@ const createAndMount = ( componentStore, parentInstance, descriptor ) =>
  */
 const mount = ( componentStore, descriptor ) => createAndMount( componentStore, null, descriptor );
 
-
 export { mount };
