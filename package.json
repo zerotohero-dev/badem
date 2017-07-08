@@ -1,6 +1,6 @@
 {
   "name": "badem",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "badem is an abstract component composer that does not require a DOM.",
   "main": "dist/index.js",
   "directories": {
@@ -15,18 +15,35 @@
   },
   "repository": "git+https://github.com/jsbites/badem.git",
   "keywords": [
-    "badem",
-    "composition",
-    "component",
     "abstract",
-    "native"
+    "badem",
+    "byte-sized javascript",
+    "byte-sized",
+    "bytesized.tv",
+    "component tree",
+    "component",
+    "composition",
+    "demos",
+    "dom",
+    "education",
+    "javascript",
+    "learning",
+    "native",
+    "podcast",
+    "screencast",
+    "tree",
+    "tutorials",
+    "vidcast",
+    "videocast",
+    "videos",
+    "virtual dom"
   ],
   "author": "Volkan Özçelik <me@volkan.io> (https://volkan.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsbites/badem/issues"
   },
-  "homepage": "https://github.com/jsbites/badem#readme",
+  "homepage": "https://bytesized.tv/",
   "devDependencies": {
     "babel-cli": "6.18.0",
     "babel-core": "6.18.2",

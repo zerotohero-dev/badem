@@ -13,7 +13,6 @@
  * Send your comments, suggestions, and feedback to me@volkan.io
  */
 
-// TODO: give a configuration option to use console.log or console.warn; default to log.
 const warn = console.log;
 
 const createNew = ( componentStore, props, type ) => {
